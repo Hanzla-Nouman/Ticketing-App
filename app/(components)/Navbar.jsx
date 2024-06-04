@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className=' flex space-x-4'>
    
    <Link href="/"> <FontAwesomeIcon icon={faHome} className='text-lg h-7 icon text-default-text'/></Link>
-   <Link href="/ticket-page"> <FontAwesomeIcon icon={faTicket} className='text-lg h-7  icon text-default-text'/></Link>
+   <Link href="/ticket-page/new"> <FontAwesomeIcon icon={faTicket} className='text-lg h-7  icon text-default-text'/></Link>
     </div>
     
     <>

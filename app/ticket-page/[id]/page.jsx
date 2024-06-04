@@ -1,7 +1,12 @@
+import TicketForm from "@/app/(components)/TicketForm"
 
 const page = ({params}) => {
   return (
-    <div>ticket {params.id}</div>
+    <>
+    <div className="">
+    <TicketForm/>
+    </div>
+    </>
   )
 }
 
