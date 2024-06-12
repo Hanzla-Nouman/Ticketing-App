@@ -1,6 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 mongoose.connect(process.env.MONGODB_URI);
-mongoose.Promise = global.Promise
+// mongoose.Promise = global.Promise
 
 const ticketSchema = new Schema(
     {
@@ -12,11 +12,11 @@ const ticketSchema = new Schema(
       status: String,
       active: Boolean,
     },
-    { timestamps: true } // corrected typo here
+    { timestamps: true } 
   );
 
-// export const Ticket = mongoose.model("Ticket", ticketSchema);
+
 
 const Ticket = mongoose.models.Ticket || mongoose.model("Ticket", ticketSchema);
 
-export default Ticket;
+export default Ticket 
